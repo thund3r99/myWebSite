@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="icon" type="image/png" href="../images/title_logo.png"><!--for title bar icon-->
+    <!--Importing external css-->
+    <link rel="stylesheet" type= "text/css" href="../css/myStyle.css">
+    <style>
+        #social{
+                margin-left: 20px; 
+                margin-top: 15px;
+                height: 30px; 
+                width: 30px;
+        }
+</style>
+</head>
+<body>
+        <!--Start of main header-->
+	<header>    		
+		<!--LOGO-->
+		<a href="../index.html"><img class="logoHead" src="../images/logo.png" title="Go to Home Page" alt="Logo"></a>		
+	</header>
+	<!--End of Header-->
+    <!--Nav Bar-->
+    <nav>    
+        <a class="navigationTab" href="../index.html">Home</a>
+        <a class="navigationTab" href="../pages/services.html">Services</a>
+        <a class="navigationTab" href="../pages/skills.html">Skills</a>
+        <a class="navigationTab" href="../pages/experience.html">Experience</a>
+        <a class="active" href="../pages/contact_me.html">Contact Me</a>
+    </nav>
+    <!--end of nav-->
+    <div style="clear:left;"></div><!--clearing float--> 
+                
+        <section style="float: left; margin-left: 10%; margin-top: 8.5%;">
+        <h1 style="font-size: 50px;">Just say hi.</h1>
+        <p style="font-size: 20px;">I would be happy to discuss potential collaboration<br> opportunities or project.</p>
+        <br><br>
+        <div style="float: left;">
+                Mail me at<br><br>
+                <a href="mailto:raju.kapali99@gmail.com" style="text-decoration: none; color: #212121;">raju.kapali99@gmail.com</a>
+        </div>
+        <div style="float: left; margin-left: 200px;">
+                Follow me<br>
+                <a href="https://au.linkedin.com/" target="_blank"><img id="social" style="margin-left:0;" src="../images/linkedin.png" title="LinkedIn" alt="LinkedIn Icon"/></a>
+		<a href="https://www.instagram.com/?hl=en" target="_blank"><img id="social" src="../images/instagram.png" title="Instagram" alt="Instagram Icon"/></a>
+		<a href="https://www.facebook.com/" target="_blank"><img id="social" src="../images/facebook.png" title="Facebook" alt="Facebook Icon"/></a>
+		<a href="https://twitter.com/" target="_blank"><img id="social" src="../images/twitter.png" title="Twitter" alt="Twitter Icon"/></a>
+        </div>
+        </section>
+        
+        <fieldset style="margin-top: 10%; margin-right: 10%; width: 500px; float:right; border-radius: 10px;">
+            <legend style="color:#212121;">Fill the Details</legend>
+                 <!--starting of form-->
+                <form action="mailto:raju.kapali99@gmail.com" method="post" enctype="text/plain" style="margin-left: 5px;">
+                
+                        <!--starting of table-->
+                        <table>
+                        
+                                <tr>
+                                        <td> <input type="text" placeholder="Name" style="width: 98%; color:#212121;"required/></td>
+                                </tr>
+                                
+                                <tr>
+                                        <td><input id="mail" type="email" placeholder="Email" style="width: 98%; color:#212121;" required/></td>
+                                </tr>
+                                   
+                                <tr>
+                                    <td><input id="sub" type="text" placeholder="Subject" style="width: 98%; color:#212121;" required/></td>
+                                </tr>
+                                <tr>
+                                        <td><textarea id="message" placeholder="Message" rows="7" cols="70" style="color:#212121; overflow:auto;" required></textarea></td>
+                                </tr>
+                                <tr style="background-color:transparent;">
+                                        <td>	<button class="button" type="submit" onClick="sent()" value="Submit">Send</button>
+                                                <button class="button" type="reset" onClick="reSet()" value="Reset">Reset</button><div id="Print" style="float:right; text-align:center; padding:4px; width:30px;"></div>
+                                        </td>
+                                </tr>
+                        </table>
+                        <!--ending of table-->   
+              </form>
+              <!--ending of form-->
+        </fieldset>
+        <div style="clear:both;"></div><!--clearing float-->
+        <div style="position: fixed; bottom: 0; margin-left: 10%; margin-bottom:20px;">&copy; Raju Kapali <script>document.write(new Date().getFullYear())</script>, All rights reserved</div>
+</body>
+</html>
